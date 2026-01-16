@@ -1,4 +1,3 @@
-# written by Gemini 
 
 import gymnasium as gym
 import torch
