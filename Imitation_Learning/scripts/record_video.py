@@ -1,4 +1,3 @@
-# Written by Gemini
 
 import gymnasium as gym
 from stable_baselines3 import PPO
@@ -23,7 +22,7 @@ for _ in range(300): # 테스트를 위해 300스텝만 짧게 찍어봅시다
         obs, _ = env.reset()
 
 # 4. 영상 저장
-print("영상 인코딩 시작... (잠시 기다려주세요)")
+print("영상 인코딩 시작")
 save_video(
     env.render(),
     "../videos",
@@ -31,5 +30,5 @@ save_video(
     name_prefix="halfcheetah_test"
 )
 
-env.close() # 환경을 닫아줘야 파일이 안전하게 저장됩니다!
+env.close() # 파일 안전하게 저장하기위함
 print("저장 완료!")
