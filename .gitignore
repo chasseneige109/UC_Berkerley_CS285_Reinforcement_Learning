@@ -1,0 +1,8 @@
+data/
+models/
+videos/
+__pycache__/
+*.mp4
+*.pth
+*.zip
+*.npz
